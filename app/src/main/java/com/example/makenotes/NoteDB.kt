@@ -2,7 +2,6 @@ package com.example.makenotes
 
 import android.content.Context
 import androidx.room.Database
-import androidx.room.Room
 import androidx.room.Room.*
 import androidx.room.RoomDatabase
 
@@ -15,7 +14,6 @@ abstract class NoteDB : RoomDatabase(){
         // same time.
         @Volatile
         private var INSTANCE: NoteDB? = null
-
         fun getDatabase(context: Context): NoteDB {
             // if the INSTANCE is not null, then return it,
             // if it is, then create the database

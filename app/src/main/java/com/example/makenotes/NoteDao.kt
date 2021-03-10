@@ -13,7 +13,7 @@ interface NoteDao {
     @Delete
     suspend fun delete(note: Note)
 
-    @Query("Select * from note order by id ASC")
+    @Query("Select * from note order by id DESC")
     fun showAllNote(): LiveData<List<Note>>
 
 

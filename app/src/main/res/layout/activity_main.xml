@@ -29,6 +29,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:backgroundTint="#0DABF3"
+
         app:layout_constraintTop_toBottomOf="@+id/enterText"
         tools:layout_editor_absoluteX="24dp" />
 

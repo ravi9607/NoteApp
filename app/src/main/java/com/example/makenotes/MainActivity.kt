@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity(),iNoteAdapter {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //recyclerView.scrollState
         recyclerView.layoutManager = LinearLayoutManager(this)
         val adapter=NoteAdapter(this,this)
         recyclerView.adapter=adapter
