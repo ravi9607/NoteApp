@@ -1,4 +1,4 @@
-package com.example.makenotes
+package com.example.makenotes.datalocal
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.makenotes.R
 
 class NoteAdapter (private val context: Context, private val listener: iNoteAdapter): RecyclerView.Adapter<NoteAdapter.NoteVH>() {
     private val allNotes=ArrayList<Note>()

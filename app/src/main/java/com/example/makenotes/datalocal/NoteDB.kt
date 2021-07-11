@@ -1,4 +1,4 @@
-package com.example.makenotes
+package com.example.makenotes.datalocal
 
 import android.content.Context
 import androidx.room.Database

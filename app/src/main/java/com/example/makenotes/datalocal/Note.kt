@@ -1,4 +1,4 @@
-package com.example.makenotes
+package com.example.makenotes.datalocal
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

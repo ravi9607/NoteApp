@@ -1,4 +1,4 @@
-package com.example.makenotes
+package com.example.makenotes.datalocal
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -14,7 +14,7 @@ class NoteVM(application: Application) : AndroidViewModel(application) {
     init {
         val dao = NoteDB.getDatabase(application).getNoteDao()
         repository = NoteRepository(dao)
-        allNotes = repository.getNote      ///////////////
+        allNotes = repository.allNotes     //////////////////////////////////  allNotes
     }
     fun deleteNote(note: Note) = viewModelScope.launch(Dispatchers.IO){
         repository.Delete(note)

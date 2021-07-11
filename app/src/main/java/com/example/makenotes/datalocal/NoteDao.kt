@@ -1,4 +1,4 @@
-package com.example.makenotes
+package com.example.makenotes.datalocal
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
@@ -7,8 +7,8 @@ import androidx.room.*
 @Dao
 interface NoteDao {
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(note:Note)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(note: Note)
 
     @Delete
     suspend fun delete(note: Note)
