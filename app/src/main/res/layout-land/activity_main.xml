@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic1"
+    android:background="@drawable/bg2"
     tools:context=".MainActivity">
 
     <EditText
@@ -14,6 +14,7 @@
         android:layout_margin="20dp"
         android:fontFamily="sans-serif-light"
         android:hint="@string/enter_text"
+        android:textStyle="bold"
         android:inputType="textAutoComplete"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"

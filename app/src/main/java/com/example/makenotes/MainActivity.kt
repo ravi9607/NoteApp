@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(), iNoteAdapter {
         )
         supportActionBar?.title = "Notes"
 
+
         //recyclerView.scrollState
         recyclerView.layoutManager = LinearLayoutManager(this)
         val adapter= NoteAdapter(this,this)

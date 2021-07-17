@@ -16,5 +16,8 @@ interface NoteDao {
     @Query("Select * from note order by id DESC")
     fun showAllNote(): LiveData<List<Note>>
 
+//    @Update
+//    suspend fun update(id: Int)
+
 
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic1"
+    android:background="@drawable/bg2"
     tools:context=".MainActivity">
 
     <EditText
@@ -14,6 +14,7 @@
         android:layout_margin="20dp"
         android:fontFamily="sans-serif-light"
         android:hint="@string/enter_text"
+        android:textStyle="bold"
         android:inputType="textAutoComplete"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,13 +36,15 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_save"
-        tools:listitem="@layout/ittem_note"/>
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="46dp"
+        tools:listitem="@layout/ittem_note" />
 
 
 
